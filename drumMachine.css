@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: #222;
+  color: #fff;
+  font-family: 'Vollkorn', serif;
+  
+}
+.skew{
+  margin-top: -110px;
+  padding: 180px 0;
+  transform: skew(0deg,-7deg);
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+.content{
+  transform: skew(0deg,deg);
+}
+
+.footer{
+  text-align: end;
+  padding-right: 2rem;
+  padding-top:6rem;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+
+i,svg{
+  pointer-events: none;
+}
+
+.sequencer{
+  display:flex;
+  flex-direction: column;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex:1;
+  margin: 0rem 2rem;
+}
+
+.controls button{
+  padding: 1rem;
+  border: none;
+  background: rgb(172, 171, 171);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  outline: none;
+}
+
+.kick-pad, .snare-pad, .hihat-pad{
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad{
+  /* background: linear-gradient(to right, #4b6cb7, #182848); */
+  background: #7ED4E6 ;
+}
+
+.snare-pad{
+  /* background: linear-gradient(to right, #de6262, #ffb88c); */
+  background:#FFB7D5 ;
+}
+
+.hihat-pad{
+  /* background: linear-gradient(to right, #efefbb, #d4d3dd); */
+  background: #e9d18f ;
+}
+
+.kick-pad.active{
+  background: #02697e ;
+}
+
+.snare-pad.active{
+  background: #e94388 ;
+}
+
+.hihat-pad.active{
+  background: #fcbc0d;
+}
+.mute.active{
+  background: rgb(51, 49, 49);
+}
+
+.kick-track,.snare-track,.hihat-track{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+  margin: 3rem;
+}
+
+.kick , .snare , .hihat{
+  display:flex;
+}
+
+.pad{
+  transition: all 0.5s ease;
+}
+
+.play{
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: #9cadbe;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  outline: none;
+  font-family: 'Vollkorn', serif;
+  color: #86777d;
+}
+
+.tempo{
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider{
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  position: relative;
+  width: 100%;
+  background: gray;
+  cursor: pointer;
+  border-radius: 1rem;
+  outline: none;
+
+}
+.tempo p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+select{
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  
+}
+
+@keyframes playTrack{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2)
+  }
+}
+
+/* .ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.3;
+} */
+
+
+
+
+
+
+
+
+
+
